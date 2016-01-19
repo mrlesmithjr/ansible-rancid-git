@@ -1,6 +1,6 @@
 ---
 # defaults file for ansible-rancid-git
-email_notifications:  #defined in group_vars/all/configs or define here
+email_notifications: 'infrastructure@{{ pri_domain_name }}'  #defined in group_vars/all/configs or define here
 pri_domain_name: example.org #defines primary domain name...define here or globally in group_vars/all
 rancid_base_dir: /opt/rancid
 rancid_config_devices: true
