@@ -1,0 +1,8 @@
+---
+- name: provisions RANCID
+  hosts: all
+  sudo: true
+  vars:
+  roles:
+    - role: ansible-rancid-git
+  tasks:
