@@ -24,8 +24,9 @@
     creates: "{{ rancid_source_dir }}/_configured"
 
 - name: debian | creating debian package and installing RANCID
-  shell: "checkinstall -D -y chdir='{{ rancid_base_dir }}/src"
+  shell: "checkinstall -D -y"
   args:
+    chdir: "{{ rancid_base_dir }}/src"
     creates: "{{ rancid_base_dir }}/etc/rancid.conf"
 
 - name: debian | configuring RANCID
