@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
     rancid.vm.box = "mrlesmithjr/trusty64"
     rancid.vm.hostname = "rancid"
 
-    rancid.vm.network :private_network, ip: "192.168.202.201"
+    rancid.vm.network :private_network, ip: "192.168.202.202"
 
     rancid.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
